@@ -5,13 +5,13 @@ stages {
 stage('scm') {
 steps {
 echo "Pulling changes from branch feature-dev/quantum-22.1.0 and from repo K1_SERVICE"
-checkout poll: false, scm: [$class: 'GitSCM', branches: [[name: "main"]],
+checkout poll: false, scm: [$class: 'GitSCM', branches: [[name: "master"]],
 doGenerateSubmoduleConfigurations: false,
                            extensions: [[$class: 'CleanBeforeCheckout']],
 extensions: [[$class: 'CloneOption', depth: 1, noTags: false, reference: '', shallow: true]],
 gitTool: 'Default', submoduleCfg: [],
                            userRemoteConfigs: [[credentialsId: '',
-url: "https://github.com/Rvenky1234/Github.git"]]
+url: "https://github.com/Rvenky1234/javaparser-maven-sample.git"]]
   ]
 }
 }
