@@ -20,7 +20,9 @@ stage ('JDK_11') {
 jdk 'java'
 }
    steps{
+     sh '''
 java -version
+'''
           }
   }
 
