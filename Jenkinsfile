@@ -21,7 +21,6 @@ jdk 'java'
 }
    steps{
 java -version
-'''
           }
   }
 
