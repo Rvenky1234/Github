@@ -30,7 +30,8 @@ java -version
 
 stage('Maven BUILD') {
 tools {
-jdk "java"
+jdk 'java'
+maven 'maven'
   }
 steps {
 echo "Starting Build"
