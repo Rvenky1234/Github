@@ -39,12 +39,6 @@ sh 'mvn clean install'
 echo 'Clean Install Completed'        
 }
 }
-stage('Build') {
-steps {                  
-sh './gradlew clean build'
-}              
-}
-
 stage('Docker stage') {
 steps {
 echo "Building image"
